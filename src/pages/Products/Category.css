@@ -1,0 +1,134 @@
+.heading{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+  }
+  .main {
+    display: flex;
+  }
+  .filters {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+    height: 86vh;
+  }
+  
+  .filters > span {
+    padding-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 30px;
+  }
+  .productContainer {
+    width: 78%;
+    padding: 20px;
+    justify-content: space-around;
+    /* border:2px solid; */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .products {
+    /* border:2px solid; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+  .more{
+    /* border:2px solid; */
+    margin: 30px 0px;
+    text-align: center;
+  }
+  .morelink:hover{
+    text-decoration: none;
+  }
+  .product {
+    /* border: 2px solid black; */
+    padding: 0px;
+    border-radius: 15px;
+    width: 300px;
+    height: 420px;
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product img {
+    /* border: 2px solid black; */
+    width: 180px;
+  }
+  
+  .product .description {
+    /* border: 2px solid black; */
+    text-align: center;
+  }
+  .products-before-load{
+    opacity: .5;
+    background-color: #d5d5d5;
+  }
+  .product:hover {
+    transition: 0.3s ease-in;
+    scale: 1.1;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 0.5px #666;
+  }
+  
+  .addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    color: #2c2c2c;
+  }
+  
+  .addToCartBttn:hover {
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    box-shadow: 0px 0px 30px 30px #2c2c2c inset;
+    color: #e7e7e7;
+  }
+  .search {
+    width: 500px;
+  }
+  @media (max-width: 771px) {
+    .filters {
+      width: 40%;
+      padding: 10px;
+      margin: 5px;
+    }
+  
+    .filters > span {
+      font-size: 10px;
+    }
+  
+    .title {
+      font-size: 18px !important;
+    }
+  
+    .productContainer {
+      width: 58%;
+      padding: 0;
+    }
+  
+    .search {
+      width: 300px;
+    }
+  
+    .product {
+      width: 100%;
+    }
+  }

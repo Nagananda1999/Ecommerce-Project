@@ -1,0 +1,71 @@
+/* ff tw cen mt std semi bold */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;;
+}
+nav{
+    display: flex;
+    padding: 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #101010;
+}
+.logo img {
+    width:200px;
+}
+.items{
+    /* border: 2px solid; */
+    display: flex;
+    align-items: center;
+}
+.item{
+
+    text-decoration: none;
+    font-size: 18px;
+    color: #777;
+    font-weight: 500;
+    margin: 0px 30px;    
+}
+.item:hover{
+    text-decoration: none;
+    scale: 1.5;
+}
+.account{
+    display: flex;
+    align-items: center;
+}
+
+.account:hover{
+    scale: 1.2;
+}
+.cartLogo{
+    width: 40px;
+}
+button.search{
+    border: none;
+    font: 20px;
+    display: flex;
+    background-color: transparent;
+}
+.cartitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cartItemImg {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .cartItemDetail {
+    display: flex;
+    flex: 1;
+    padding: 0 20px;
+    flex-direction: column;
+  }

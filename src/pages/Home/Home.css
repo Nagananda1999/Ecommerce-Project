@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.slider{
+    /* border: 10px solid; */
+    position:relative;
+    /* top: -80px; */
+    width: 100%;
+    z-index: -1;
+}
+.Register, .Login{
+    box-sizing: border-box;
+    background-color: #e4e4e4;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.RegisterForm , .LoginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    width: 400px;
+    height: 380px;
+    min-width: 350px;
+}
+
+.RegisterForm>input , .LoginForm>input{
+    background-color: #E5E8ED;
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    border-radius:5px ;
+    border: none;
+}
+
+.RegisterForm > input::placeholder,.LoginForm>input::placeholder {
+    color: #6e6e6e;
+    text-align: left;
+    
+}
+.RegisterForm > input:focus,  .LoginForm> input:focus{
+    scale: 1.1;
+}
+.Submit{    
+    width: 90%;
+    height: 35px;
+    margin-top: 30px;
+    height: 50px;
+    color: #e4e4e4;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #6A62D2;
+    border-radius:5px ;
+    border: none;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about>img{
+    width: 100%;
+    height: auto;
+}

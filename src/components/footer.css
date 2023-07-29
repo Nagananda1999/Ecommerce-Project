@@ -1,0 +1,11 @@
+.footer{
+    background-image: url("../assets/footerbg-grey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 20px;
+}
