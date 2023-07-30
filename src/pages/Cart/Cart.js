@@ -68,13 +68,16 @@ import { Collapse,Card,CardTitle,CardHeader} from 'reactstrap';
           <p> Subtotal: ${totalAmount} </p>
           
           <button
+          className="cart-btn"
             onClick={handleProceed}
           >
             proceed
           </button>
           </div>
           <Collapse className="colapse" isOpen={isOpen1} >
-            <form onSubmit={handleSubmit} >
+           <Card>
+           <form className="CheckoutForm" onSubmit={handleSubmit} >
+            <label htmlFor="name">Name</label>
               <input 
                 type="text"
                 name="name" 
@@ -83,7 +86,7 @@ import { Collapse,Card,CardTitle,CardHeader} from 'reactstrap';
                 placeholder='USERNAME'
                 readOnly/>
 
-
+              <label htmlFor="email">Email</label>
               <input 
                 type="text" 
                 name="email"
@@ -92,7 +95,7 @@ import { Collapse,Card,CardTitle,CardHeader} from 'reactstrap';
                 placeholder='E-MAIL' 
                 readOnly/>
 
-                {/* TODO: address, phone number display data checkout*/}
+                
                 <textarea name="address" 
                           id="address" 
                           cols="30" 
@@ -102,6 +105,7 @@ import { Collapse,Card,CardTitle,CardHeader} from 'reactstrap';
                           value={address}
                           onChange={e=>setAddress(e.target.value)}
                           />
+                <label htmlFor="phoneNo">Phone-No</label>
                 <input 
                     type="tel"
                     name="phone" 
@@ -110,16 +114,18 @@ import { Collapse,Card,CardTitle,CardHeader} from 'reactstrap';
                     value={phone}
                     pattern="[0-9]{10}"
                     onChange={e=>setPhone(e.target.value)}
+                    placeholder="Phone-No"
                     />
-                    <button
+                    <button className="cart-btn"
                     >Proceed</button>
             </form>
+           </Card>
           </Collapse>
           <Collapse className="colapse" isOpen={isOpen2}>
             <Card>
-            <table>
+            <table className="review">
               <tr>
-                <td>Contact</td>
+                <td>Contact:</td>
                 <td>{email}</td>
               </tr>
               <tr>
@@ -127,10 +133,12 @@ import { Collapse,Card,CardTitle,CardHeader} from 'reactstrap';
                 <td>{address}</td>
               </tr>
             </table>
-            </Card>
             <button
+            className="cart-btn"
               onClick={()=>checkout()}
             >Checkout</button>
+            </Card>
+            
           </Collapse>
         </>
         

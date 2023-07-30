@@ -1,3 +1,4 @@
+
 .cart {
   display: flex;
   flex-direction: column;
@@ -6,38 +7,87 @@
 }
 
 .cartItem {
-  width: 700px;
-  height: 250px;
+  width: 600px;
+  height: 200px;
   display: flex;
-
   align-items: center;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
+  justify-content: space-around;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  /* border: 2px solid; */
   margin: 30px;
 }
 
 .cartItem img {
-  width: 200px;
+  border: 2px solid;
+  width: 150px;
 }
 
 .cartItem .description {
-  width: 100%;
+  /* width: 70%; */
+  /* border: 2px solid; */
   font-size: 30px;
 }
-
+.description p{
+  font-size: 24px;
+}
 .countHandler input {
   width: 40px;
+  border: none;
   text-align: center;
   font-weight: bolder;
 }
-
-.checkout button {
+.countHandler button{
+  padding: 0px 15px;
+  border: none;
+  cursor: pointer;
+}
+.cart-btn {
   width: 150px;
   height: 50px;
   background-color: rgb(19, 19, 19);
   color: white;
   border: none;
   border-radius: 8px;
-  margin: 10px;
+  margin:10px auto;
   cursor: pointer;
+  text-transform: capitalize  ;
+}
+
+.CheckoutForm{
+  display: flex;
+  /* border: 2px solid; */
+  width: 330px;
+  flex-direction:column;
+}
+.CheckoutForm>input{
+  margin: 0px 25px 10px;
+}
+.CheckoutForm>textarea{
+  margin: 10px 25px;
+}
+.CheckoutForm>label{
+  margin: 10px 25px 0px;
+}
+.review{
+  width: 300px;
+  margin: 20px 0px;
+}
+.review,td,tr{
+  padding: 10px;
+  border: 2px solid;
+}
+.colapse{
+  margin: 10px;
+}
+@media only screen and (min-width:600px) {
+  .CheckoutForm, .review{
+    width: 500px;
+  }
+  .CheckoutForm input{
+    padding: 8px 15px;
+  }
+  td{
+    padding: 25px;
+  }
 }

@@ -39,7 +39,7 @@ const ProductDetail = () => {
             <br />
             <p className='shortDiscription' >{shortDiscription}</p>
             <p className='longDiscription' >{longDiscription}</p>
-            <button className="addToCartBttn" onClick={() => addToCart(id)}>
+            <button className="addToCartBttn btn-detail" onClick={() => addToCart(id)}>
                 Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
             </button>
         </div>
